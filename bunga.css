@@ -1,0 +1,118 @@
+/* Reset Margin & Font Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9f6;
+    color: #333;
+}
+
+/* Header Tema Alam */
+.header-taman {
+    background-color: #2e7d32; /* Hijau Alam */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}s
+.navbar {
+    background-color: #2e7d32; /* Hijau alam */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /*membuat daftar menu persis ditengah*/
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item a {
+    color: #f7f9f6; /* Warna putih gading sesuai body*/
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+    color: #81c784; /* Warna hijau muda saat kursor diarahkan */
+}
+
+/* Kontainer Konten */
+.kontainer {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.garis-pembatas {
+    border: 0;
+    height: 3px;
+    background-color: #81c784;
+    margin-bottom: 30px;
+    width: 100px;
+    margin-left: 0;
+}
+
+/* Mengatur Grid Berjajar Menggunakan Float */
+.kartu-bunga {
+    width: 23%; /* Membagi ruang agar muat 4 kartu berdampingan */
+    float: left; /* Membuat elemen berjajar ke samping kiri */
+    margin-right: 2%; /* Jarak antar kartu */
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Menghilangkan margin kanan pada kartu terakhir di baris tersebut */
+.kartu-bunga:last-child {
+    margin-right: 0;
+}
+
+/* Detail Informasi di dalam Kartu */
+.info-bunga {
+    padding: 15px;
+}
+
+.info-bunga h3 {
+    margin: 0 0 10px 0;
+    color: #1b5e20;
+}
+
+.info-bunga p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+}
+
+/* PENTING: Menetralkan efek float untuk elemen berikutnya */
+.clearfix {
+    clear: both;
+}
+
+/* Footer Halaman */
+.footer-taman {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
